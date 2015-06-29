@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Cadastro De funcionarios</title>
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<div id="header">
+
+			<div id="init" >
+				<a  href="../index.html"> <img src="css/img/icon_init.png" /> <label class="label">Ínicio </label> </a>
+			</div>
+
+			<div id="title">
+				<h1>Net Movie</h1>
+				<h2>Filmes Online</h2>
+			</div>
+		</div>
+
+		<form id="form">
+			<fieldset>
+				<legend>
+					Cadastrar Funcionários
+				</legend>
+
+				<fieldset class="dados">
+					<legend>
+						Dados Pessoais
+					</legend>
+
+					<label>
+						<p class="label">
+							Nome
+						</p>
+						<input type="text" id="nome" required="required" placeholder="Nome do Produtor"/>
+					</label>
+
+					<label>
+						<p class="label">
+							Celular
+						</p>
+						<input type="text" id="celular" required="required" placeholder="xx xxxx-xxxx" pattern="\d{2}\ \d{4}\-\d{4}" onkeypress="Index.mascara(this, '## ####-####')" maxlength="12" />
+					</label>
+
+					<label>
+						<p class="label">
+							Celular2
+						</p>
+						<input type="text" id="celular2" placeholder="xx xxxx-xxxx" pattern="\d{2}\ \d{4}\-\d{4}" onkeypress="Index.mascara(this, '## ####-####')" maxlength="12"/>
+					</label>
+					
+					<label>
+						<p class="label">
+							Telefone
+						</p>
+						<input type="text" id="telefone" placeholder="xx xxxx-xxxx" pattern="\d{2}\ \d{4}\-\d{4}" onkeypress="Index.mascara(this, '## ####-####')" maxlength="12"/>
+					</label>
+				</fieldset>
+
+				<fieldset id="end" class="dados">
+					<legend>
+						Endereço
+					</legend>
+
+					<label>
+						<p class="label">
+							Cidade
+						</p>
+						<input type="text" id="cidade" required="required" placeholder="Cidade"/>
+					</label>
+
+					<label>
+						<p class="label">
+							Bairro
+						</p>
+						<input type="text" id="bairro" placeholder="Bairro"/>
+					</label>
+
+					<label>
+						<p class="label">
+							Rua
+						</p>
+						<input type="text"  id="rua" placeholder="Rua"/>
+					</label>
+
+					<label>
+						<p class="label">
+							Número
+						</p>
+						<input type="number" min="1" id="numero" placeholder="Número"/>
+					</label>
+				</fieldset>
+
+				<div class="botoes">
+					<input type="submit" name="" value="Salvar" id="salvar">
+					<input type="reset" name="" value="Cancelar" id="cancelar">
+				</div>
+
+			</fieldset>
+
+		</form>
+
+		<div id="table-produtor">
+			<table id="tabela-funcionarios" class="tabela">
+				<caption>
+					Gerenciar funcionários
+				</caption>
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>Cidade</th>
+						<th>Bairro</th>
+						<th>Celular</th>
+						<th>Celular 2</th>
+						<th>Ações</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+
+		<script type="text/javascript" src="js/FuncionarioDAO.js"></script>
+		<script type="text/javascript" src="js/TableController.js"></script>
+		<script type="text/javascript" src="js/Index.js"></script>
+	</body>
+</html>
