@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Filmes</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	</head>
+	<body>
+		<div id="header">
+
+			<div id="init" >
+				<a  href="../index.html"> <img src="css/img/icon_init.png" /> <label class="label">Ínicio </label> </a>
+			</div>
+
+			<div id="title">
+				<h1>Net Movie</h1>
+				<h2>Filmes Online</h2>
+			</div>
+		</div>
+
+		<form action="" id ="form" class="variedade-form">
+
+			<fieldset>
+
+				<legend>
+					Cadastrar Filme
+				</legend>
+
+				<label>
+					<p class="label">
+						Título
+					</p>
+					<input type="text" name="" value="" placeholder="Titulo do filme" id="nome" required="required">
+				</label>
+				<label>
+					<p class="label">
+					Ano
+					</p>
+					<input type="number" min="2014" max="2097" required="required" id="ano" name="" value="" placeholder="Ano do filme">
+				</label>
+
+				<label>
+					<p class="label">
+						Descrição
+					</p> 					<textarea id = "descricao" required="required"></textarea> 
+				</label>
+
+				<div class="botoes">
+					<input type="submit" name="" value="Salvar" id="salvar">
+					<input type="reset" name="" value="Cancelar" id="cancelar">
+				</div>
+
+			</fieldset>
+		</form>
+
+		<div id="table">
+			<table id="tabela-filmes" class="tabela">
+				<caption>
+					Gerenciar Filmes
+				</caption>
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>Ano</th>
+						<th>Descrição</th>
+						<th>Ações</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+
+		<script type="text/javascript" src="js/FilmeDAO.js"></script>
+		<script type="text/javascript" src="js/TableController.js"></script>
+		<script type="text/javascript" src = "js/Index.js"></script>
+	</body>
+</html>
