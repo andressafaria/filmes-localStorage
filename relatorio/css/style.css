@@ -96,7 +96,7 @@ table, td, th {
 	border: solid 1px #000;
 }
 td, th {
-	width: 400px;
+	width: 500px;
 }
 th {
 	background-color: #999;
@@ -120,4 +120,12 @@ colgroup {
 }
 .btn-success {
 	background-color: green;
+}
+
+.footer {
+	position:absolute;
+	bottom:0;
+	width:100%;
+text-align: center;
+font:1.1em "Courier New", Courier, mono;
 }

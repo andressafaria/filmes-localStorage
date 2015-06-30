@@ -61,4 +61,18 @@ a {
 .label {
 	text-align: center;
 }
+
+
+
+
+/*colocando rodape na pagina*/
+
+.footer {
+	position:absolute;
+	bottom:0;
+	width:100%;
+	font:1.1em "Courier New", Courier, mono; 
+}
+
+
 /*FIM*/

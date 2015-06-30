@@ -124,3 +124,11 @@ colgroup {
 .btn-success {
 	background-color: green;
 }
+
+.footer {
+	position:absolute;
+	bottom:0;
+	width:100%;
+text-align: center;
+font:1.1em "Courier New", Courier, mono;
+}
