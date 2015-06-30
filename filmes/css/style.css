@@ -77,6 +77,17 @@ label {
 .label {
 	width: 90px;
 	margin: 0 auto;
+
+}
+/*apenas para alterar e mexer na cor so no inicio*/
+.labelInicio{
+
+	width: 90px;
+	margin: 0 auto;
+	color: white;
+	
+}
+
 }
 input[type=submit], input[type=reset] {
 	width: 60px;
