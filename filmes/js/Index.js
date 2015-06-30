@@ -17,6 +17,8 @@ var Index = {
 		}
 	},
 
+	//salva os dados
+
 	saveVariedade: function(form) {
 		var variedade = {};
 		variedade.nome  = form.nome.value;
@@ -46,7 +48,7 @@ var Index = {
 			TableController.addList(variedadeList, Index.edit, Index.delete);
 		}
 	}, 
-
+//editar od campos do filme
 	edit: function(nome) {
 		if(confirm("Você deseja editar o filme " + nome + " ?")) {
 			var variedade = VariedadeDAO.get(nome);
@@ -58,6 +60,8 @@ var Index = {
 			}
 		}
 	},
+
+	//deletar o filme
 
 	delete: function(nome, element) {
 		if(confirm("Você deseja deletar o filme " + nome)) {
