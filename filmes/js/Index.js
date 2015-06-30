@@ -6,7 +6,7 @@ var Index = {
 		Index.setForm();
 		Index.listVariedades();
 	},
-
+//seter o formulario com o onsubmit
 	setForm: function() {
 		var form = document.getElementById('form');
 		if(form) {

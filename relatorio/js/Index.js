@@ -70,7 +70,7 @@ var Index = {
 			tabela.appendChild(row);
 		}
 	},
-		
+		//criar uma tabela, para poder ser listado so campos de maneira que fique dentro de uma tabela
 	createNewRow: function() {
 		var row = document.createElement('tr');
 		row.appendChild(document.createElement('td'));
